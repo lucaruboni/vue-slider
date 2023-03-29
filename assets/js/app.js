@@ -69,6 +69,14 @@ const { createApp } = Vue
         if (this.activeGame < 0)
         this.activeGame = this.games.length - 1
 
-    }, 
+      }, 
+
+      changeImage(index){
+        console.log(index)
+        this.activeGame = index
+        
+
+      }
+
       }
     }).mount('#app')

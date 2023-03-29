@@ -33,8 +33,10 @@
 
                 <div class="col-2 mt-5 p-0">
                     <div class="thumbnail">
-                        <img v-for="image in games"  :src="games.image" class="object-fit-cover img_height " 
-                        alt="">
+                        <img :src="game.image" v-for="game in games" 
+                        v-for="(game, index) in games"
+                        class="object-fit-cover img_height" 
+                        alt="" @click="changeImage(index)">
                     </div>
                 
 
