@@ -1,0 +1,41 @@
+img{
+    height: 600px;
+    width: 100%;
+    object-fit: contain;
+ }
+ .images img:not(.active) {
+     display: none;
+ }
+ 
+ .slider{
+     background-color: black;
+ 
+ }
+ 
+ .img_height{
+     height: calc(600px / 5);    
+     border: 1px solid;
+ }
+ 
+ .col_border> .active{
+     filter: grayscale(1);
+ 
+ }
+ 
+ main{
+     height: 100vh;
+     background-color: grey;
+ }
+ 
+ .rounded_col{
+     border-radius: 30px;
+ }
+ 
+ .fadeIn {
+     animation: fadeIn .5s ease-in-out;
+ }
+ 
+ @keyframes fadeIn {
+     0% {opacity: 0}
+     100% {opacity: 1}
+ }
