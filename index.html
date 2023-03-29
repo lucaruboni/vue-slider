@@ -25,9 +25,9 @@
                     <div class="slider rounded-start-3 col-12 d-flex flex-column justify-content-center ">
                         <div class="images align-self-center d-flex">               
                             <img :src="games[activeGame].image" alt="">
-                            <div class="text">
-                            <h3 class="text-light align-self-end">{{games[activeGame].title}}</h3>
-                            <p></p>
+                            <div class="text d-flex flex-column justify-content-end p-1">
+                            <h3 class="text-light ">{{games[activeGame].title}}</h3>
+                            <p class="text-light">{{games[activeGame].text}}</p>
                         </div>
                         </div>
                     </div>

@@ -27,6 +27,19 @@ img{
  .rounded_col{
      border-radius: 30px;
  }
+
+ .images{
+    position: relative;
+    width:100%;
+ }
+
+ .text{
+    position: absolute;
+    width: 100%;
+    bottom: 1rem;
+    right: 1rem;
+    text-align: end;
+ }
  
  .fadeIn {
      animation: fadeIn .5s ease-in-out;
