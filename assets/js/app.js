@@ -74,8 +74,6 @@ const { createApp } = Vue
       changeImage(index){
         console.log(index)
         this.activeGame = index
-        
-
       }
 
       }
