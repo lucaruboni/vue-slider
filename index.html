@@ -19,7 +19,8 @@
 
         <div class="row rounded-3">
 
-            <div class="col-12 d-flex rounded_col p-0">
+            <div class="col-12 d-flex rounded_col p-0"
+            @mouseenter="stopAutoPlay()" @mouseleave="restartAutoPlay()">
 
                 <div class="col-10 d-flex flex-column justify-content-center mt-5 p-0">
                     <div class="slider rounded-start-3 col-12 d-flex flex-column justify-content-center ">
@@ -51,7 +52,7 @@
 
             <nav class="d-flex justify-content-center align-content-between m-3">
                 <button class="btn btn-dark w-25 align-self-center prev mx-2" @click="prev">Prev</button>
-                <button class="btn btn-dark w-25 align-self-center next mx-2" @click="next">Next</button>
+                <button class="btn btn-dark w-25 align-self-center next mx-2" @click="next" v-bind="setInterval">Next</button>
             </nav>
 
         </div>

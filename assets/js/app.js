@@ -11,6 +11,7 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
+        autoPlayId: null,
         activeGame: 0,
         games: [
     
@@ -74,7 +75,22 @@ const { createApp } = Vue
       changeImage(index){
         console.log(index)
         this.activeGame = index
+      },
+      startAutoPlay(){
+       this.autoPlayId = setInterval(this.next, 1500)
+      },
+      stopAutoPlay(){
+        clearInterval(this.autoPlayId)
+      },
+      restartAutoPlay(){
+        this.autoPlayId = setInterval(this.next, 1500)
       }
+      
 
+      },
+
+      mounted(){
+        this.startAutoPlay()
       }
+      
     }).mount('#app')
